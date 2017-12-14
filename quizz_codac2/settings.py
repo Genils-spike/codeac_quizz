@@ -77,14 +77,14 @@ WSGI_APPLICATION = 'quizz_codac2.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
+        'OPTIONS' : { "init_command": "SET foreign_key_checks = 0;" },
         'NAME': 'quizz_code_ac',
         'USER': 'root',
-        'PASSWORD': 'facesimplon',
-        'HOST': '',
+        'PASSWORD': 'MOTDEPASSE',
+        'HOST': 'localhost',
         'PORT': '',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
